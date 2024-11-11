@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "E.K.I.P",
-  "version": "1.0",
+  "version": "1.0.1",
   "author": "",
   "files": [
     {
@@ -45,6 +45,11 @@
       "required": true
     },
     {
+      "projectID": 245755,
+      "fileID": 5841750,
+      "required": true
+    },
+    {
       "projectID": 250419,
       "fileID": 5855251,
       "required": true
@@ -60,8 +65,23 @@
       "required": true
     },
     {
+      "projectID": 255308,
+      "fileID": 5889509,
+      "required": true
+    },
+    {
       "projectID": 238551,
       "fileID": 5794082,
+      "required": true
+    },
+    {
+      "projectID": 531761,
+      "fileID": 5644976,
+      "required": true
+    },
+    {
+      "projectID": 626761,
+      "fileID": 4923828,
       "required": true
     },
     {
@@ -72,6 +92,11 @@
     {
       "projectID": 438332,
       "fileID": 4715408,
+      "required": true
+    },
+    {
+      "projectID": 238222,
+      "fileID": 5626488,
       "required": true
     },
     {
@@ -92,6 +117,11 @@
     {
       "projectID": 228525,
       "fileID": 5423987,
+      "required": true
+    },
+    {
+      "projectID": 856996,
+      "fileID": 5869180,
       "required": true
     }
   ],
