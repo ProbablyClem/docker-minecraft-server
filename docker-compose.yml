@@ -7,7 +7,7 @@ services:
       - TYPE=AUTO_CURSEFORGE
       - SEED=31563250179158
       - CF_MODPACK_MANIFEST=/mods/manifest.json
-      - CF_SLUG=custom
+      - CF_SLUG="E.K.I.P"
     ports:
       - "25565:25565"
     volumes:
