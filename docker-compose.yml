@@ -11,7 +11,7 @@ services:
     volumes:
       - data:/data
       - ./mods:/mods
-      - ./config:/config
+      # - ./config:/config
       - ./resourcepacks:/resourcepacks
     stdin_open: true
     tty: true
