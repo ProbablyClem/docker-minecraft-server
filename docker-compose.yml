@@ -9,9 +9,8 @@ services:
       - REMOVE_OLD_MODS=true
       - ONLINE_MODE=false
       - MAX_MEMORY=3G
-      - MODPACK=https://github.com/TinTinTounsi/docker-minecraft-server/blob/master/E.K.I.P%20Final-1.0.1.zip
-    ports:
-      - "25565:25565"
+    # ports:
+    #   - "25565:25565"
     volumes:
       - data:/data
       - ./mods:/mods
