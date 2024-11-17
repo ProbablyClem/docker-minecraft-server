@@ -13,11 +13,11 @@ ARG EXTRA_DNF_PACKAGES=""
 ARG EXTRA_ALPINE_PACKAGES=""
 ARG FORCE_INSTALL_PACKAGES=1
 RUN --mount=target=/build,source=build \
-    TARGET=${TARGETARCH}${TARGETVARIANT} \
-    /build/run.sh install-packages
+  TARGET=${TARGETARCH}${TARGETVARIANT} \
+  /build/run.sh install-packages
 
 RUN --mount=target=/build,source=build \
-    /build/run.sh setup-user
+  /build/run.sh setup-user
 
 COPY --chmod=644 files/sudoers* /etc/sudoers.d
 
@@ -75,6 +75,9 @@ COPY --chmod=755 files/auto /auto
 RUN curl -fsSL -o /image/Log4jPatcher.jar https://github.com/CreeperHost/Log4jPatcher/releases/download/v1.0.1/Log4jPatcher-1.0.1.jar
 
 RUN dos2unix /start* /auto/*
+
+COPY --chmod=755 mods/* /mods/
+COPY --chmod=755 resourcepacks/* /resourcepacks/
 
 ENTRYPOINT [ "/start" ]
 HEALTHCHECK --start-period=2m --retries=2 --interval=30s CMD mc-health
