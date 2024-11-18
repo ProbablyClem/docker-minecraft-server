@@ -77,6 +77,7 @@ RUN curl -fsSL -o /image/Log4jPatcher.jar https://github.com/CreeperHost/Log4jPa
 RUN dos2unix /start* /auto/*
 
 COPY --chmod=755 mods/* /mods/
+COPY --chmod=755 config/** /config/
 # COPY --chmod=755 resourcepacks/* /resourcepacks/
 
 ENTRYPOINT [ "/start" ]
