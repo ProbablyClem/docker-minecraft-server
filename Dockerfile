@@ -78,6 +78,7 @@ RUN dos2unix /start* /auto/*
 
 COPY --chmod=755 mods/* /mods/
 COPY --chmod=755 config/** /config/
+COPY --chmod=755 saves/** /saves/
 # COPY --chmod=755 resourcepacks/* /resourcepacks/
 
 ENTRYPOINT [ "/start" ]
