@@ -5,6 +5,7 @@ services:
       - EULA=true
       - VERSION=1.20.1
       - TYPE=FORGE
+      - FORGE_VERSION=47.3.0
       - SEED=31563250179158
       - REMOVE_OLD_MODS=true
       - ONLINE_MODE=false
